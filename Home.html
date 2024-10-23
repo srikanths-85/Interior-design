@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Home.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="header">
+                <button class="toggleBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <img src="../rl/images/home-decoration-interior-logo-design-vector.jpg" alt="Logo" onclick="handleHomeClick()">
+        
+            <ul class="links">
+                <li><a href="../rl/Home.html">Home</a></li>
+                <li><a href="../rl/Projects.html">Projects</a></li>
+                <li><a href="../rl/AboutUs.html">About Us</a></li>
+                <li><a href="../rl/OurServices.html">Our Services</a></li>
+                <li><a href="../rl/Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="wrapper">
+        <div class="testimonial-container" id="_testimonial-container">
+           
+        </div>
+        <button id="prev">&lt;</button>
+        <button id="next">&gt;</button>
+    </div>
+
+
+    <div class="welcome-text">
+        <h2>Home Interiors Made Easy</h2>
+        <p><i>You book a consultation, get guided by one of the 400+ top-notch interior designers, and we take care of the rest, from start to finish. We have done it for more than 10,000 homes already.</i></p>
+        <button class="book" onclick="handleclick()">Book -></button>
+    </div>
+    <img src="" alt="">
+    <script>
+        const images = [
+            { src: '../rl/images/interior-design-3d-visualization.jpg'},
+            { src: '../rl/images/Interior-design-packages-by-Decorilla-300x200.jpg'},
+            { src: '../rl/images/modern-interior-design-grey-living-room2-scaled.jpeg'},
+        ];
+
+        let currentIndex = 0;
+
+        function showTestimonial(index) {
+            const container = document.getElementById('_testimonial-container');
+            container.innerHTML = `
+                <img src="${images[index].src}" alt="Image ${index + 1}">`;
+        }
+
+        function nextTestimonial() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showTestimonial(currentIndex);
+        }
+
+        document.getElementById('next').addEventListener('click', nextTestimonial);
+        document.getElementById('prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showTestimonial(currentIndex);
+        });
+
+        showTestimonial(currentIndex);
+        setInterval(nextTestimonial, 3000);
+
+        function handleclick(){
+            location.href='../rl/Contact.html';
+        }
+        function handleHomeClick(){
+        location.href = '../rl/Home.html';
+    }
+    </script>
+</body>
+</html>

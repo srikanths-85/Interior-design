@@ -1,0 +1,127 @@
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 1.5rem;
+        background-color: #f4f4f4; /* Light background for contrast */
+    }
+
+    nav {
+        background-color: #ffffff; /* White background for the nav */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-container {
+        display: flex;
+        align-items: center; /* Center items vertically */
+        justify-content: flex-start; /* Align items to the start (left) */
+        max-width: 1170px; /* Center content */
+        margin: 0 auto; /* Center nav container */
+        padding: 1rem; /* Padding for nav */
+    }
+
+    nav img {
+        max-width: 90px; /* Set a max width for the logo */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 1rem; /* Space between logo and links */
+        align-self: flex-start; /* Align the image to the top */
+    }
+    ul{
+        padding-left: 300px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+    }
+
+    .toggleBtn {
+        font-size: 1.5rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    /* 
+    ul{
+        padding-left: 100px;
+    } */
+
+    .links {
+        display: flex; /* Flex display for better alignment */
+        gap: 0.5rem; /* Space between links */
+    }
+
+    .links a {
+        padding: 0.5rem 1rem; /* Improved padding */
+        color: #333; /* Link color */
+        transition: background 0.3s ease;
+        text-decoration: none;
+    }
+
+    .links a:hover {
+        background-color: #e74c3c; /* Background change on hover */
+        color: white; /* Change text color on hover */
+    }
+
+    li{
+        list-style-type: none
+    }
+
+.contact-form-container {
+    max-width: 600px; /* Max width for the form */
+    margin: 2rem auto; /* Center the form */
+    padding: 1.5rem; /* Padding inside the form */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 0.5em; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.contact-form-container h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 1rem; /* Space below the title */
+}
+
+.form-group {
+    margin-bottom: 1rem; /* Space between form groups */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 0.5rem; /* Space below labels */
+}
+
+input, textarea {
+    width: 100%; /* Full width inputs */
+    padding: 0.5rem; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 0.25em; /* Slightly rounded corners */
+    font-size: 1rem; /* Font size */
+}
+
+input:focus, textarea:focus {
+    border-color: #e74c3c; /* Highlight border on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    width: 100%; /* Full width button */
+    padding: 0.7rem; /* Padding inside button */
+    background-color: #e74c3c; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 0.25em; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Transition for hover effect */
+}
+
+button:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+}

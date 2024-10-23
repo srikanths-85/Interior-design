@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+nav {
+    background-color: #ffffff; /* White background for the nav */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start (left) */
+    max-width: 1170px; /* Center content */
+    margin: 0 auto; /* Center nav container */
+    padding: 1rem; /* Padding for nav */
+}
+
+nav img {
+    max-width: 90px; /* Set a max width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 1rem; /* Space between logo and links */
+    align-self: flex-start; /* Align the image to the top */
+}
+
+.links {
+    display: flex; /* Flex display for better alignment */
+    gap: 0.5rem; /* Space between links */
+}
+
+.links a {
+    padding: 0.5rem 1rem; /* Improved padding */
+    color: #333; /* Link color */
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.links a:hover {
+    background-color: #e74c3c; /* Background change on hover */
+    color: white; /* Change text color on hover */
+}
+
+li {
+    list-style-type: none;
+}
+ul{
+    padding-left: 350px;
+}
+
+.containerHead {
+    text-align: center;
+}
+
+.container {
+    width: calc(32% - 20px); /* Adjust width for three containers in a row */
+    border: 1px solid rgb(194, 193, 193);
+    display: inline-block;
+    margin: 10px; /* Space between containers */
+    border-radius: 20px;
+    color: rgb(120, 119, 119);
+    cursor: pointer;
+    padding: 10px;
+    text-align: center; /* Center text within the container */
+    transition: transform 0.3s; /* Smooth transform for hover effect */
+}
+
+.container img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.container img:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}

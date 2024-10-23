@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="AboutUs.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="header">
+                <button class="toggleBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <img src="../rl/images/home-decoration-interior-logo-design-vector.jpg" alt="Logo" onclick="handleHomeClick()">
+        
+            <ul class="links">
+                <li><a href="../rl/Home.html">Home</a></li>
+                <li><a href="../rl/Projects.html">Projects</a></li>
+                <li><a href="../rl/AboutUs.html">About Us</a></li>
+                <li><a href="../rl/OurServices.html">Our Services</a></li>
+                <li><a href="../rl/Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <h1>Why Choose Us</h1>
+      
+       
+        <div class="container1">
+          <div class="card">
+            <div class="icon">
+              <img src="../rl/images/customised-design.png" alt="">
+            </div>
+            <p class="text">Customised Design</p>
+          </div>
+      
+          <div class="card">
+            <div class="icon">
+                <img src="../rl/images/on-time-completion.png" alt="">            </div>
+            <p class="text"></p>On Time Completion</p>
+          </div>
+      
+          <div class="card">
+            <div class="icon">
+              <img src="../rl/images/project-management.png" alt="">
+            </div>
+            <p class="text">Project Management</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <img src="../rl/images/easy-emi.png" alt="">
+            </div>
+            <p class="text">Easy EMI Options</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <img src="../rl/images/on-budget.png" alt="">
+            </div>
+            <p class="text">Budget Friendly</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <img src="../rl/images/customised-design.png" alt="">
+            </div>
+            <p class="text">3D Visualization</p>
+          </div>
+        </div>
+    </div>
+    <div class="faq">
+    <div class="container">
+      <h1>Frequently asked questions</h1>
+      <div class="accordion">
+          <div class="heading">1. How do I schedule a consultation with your interior design team?</div>
+          <div class="text">
+            You can schedule a consultation with our Interior Design Team, by filling out the contact form available on our Beautiful Homes website. Our team will then promptly contact you to schedule a consultation according to your convenience.          </div>
+      </div>
+      <div class="accordion">
+          <div class="heading">2. What interior design services do you offer?</div>
+          <div class="text">
+            Our range of interior design services includes interior planning, furniture selection, colour consultations, decor styling, and full-interior solutions making sure it meets your design style and preferences. Our goal is to create functional and beautiful spaces that reflect your personality.          </div>
+      </div>
+  <div class="accordion">
+      <div class="heading">3. Can I browse examples of your past interior design projects?</div>
+      <div class="text">
+        Yes, you can go through our collection of past interior design projects on our website to understand our design style, aesthetics, and planning. You can also go through our customer testimonials to get a better understanding.        </div>
+  </div>
+  <div class="accordion">
+      <div class="heading">4. How can I find inspiration for my interior design projects?</div>
+      <div class="text">
+        To make the process of finding inspiration for your personal interior design projects we have created our Asian Paints Beautiful Homes Magazine and Design Ideas section. Here you can understand which type of interior design suits you and what range of products of Beautiful Homes Stores you like. If you still find yourself confused about which design is the best for your home then you can always speak to our interior designers to create a truly unique and personalized space.        </div>
+  </div>
+  <div class="accordion">
+      <div class="heading">5. What interior design styles are currently trending?</div>
+      <div class="text">
+        The interior design styles currently trending include Modern Minimalist, Scandinavian chic, Industrial Rustic, and Sustainable Eco-friendly designs. These styles emphasize simplicity, functionality, natural elements, and sustainability, reflecting the preferences of today's homeowners.       </div>
+  </div>
+    </div>
+    </div>
+
+  <script>const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach((accordion)=>{
+        accordion.addEventListener("click",()=>{
+            accordion.classList.toggle("active");
+        });
+    });</script>
+</body>
+</html>

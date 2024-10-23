@@ -1,0 +1,173 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+nav {
+    background-color: #ffffff; /* White background for the nav */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start (left) */
+    max-width: 1170px; /* Center content */
+    margin: 0 auto; /* Center nav container */
+    padding: 1rem; /* Padding for nav */
+}
+
+nav img {
+    max-width: 90px; /* Set a max width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 1rem; /* Space between logo and links */
+    align-self: flex-start; /* Align the image to the top */
+}
+ul{
+    padding-left: 300px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.toggleBtn {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* 
+ul{
+    padding-left: 100px;
+} */
+
+.links {
+    display: flex; /* Flex display for better alignment */
+    gap: 0.5rem; /* Space between links */
+}
+
+.links a {
+    padding: 0.5rem 1rem; /* Improved padding */
+    color: #333; /* Link color */
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.links a:hover {
+    background-color: #e74c3c; /* Background change on hover */
+    color: white; /* Change text color on hover */
+}
+
+li{
+    list-style-type: none
+}
+/* Wrapper Styles */
+.wrapper {
+    
+    position: relative; /* Change to relative for proper positioning */
+    width: 80vw;
+    max-width: 41em;
+    min-height: 25em;
+    margin: 2rem auto; /* Center and add margin below nav */
+    border-radius: 0.6em;
+    box-shadow: 0.1em 0.8em 3em rgba(1, 17, 39, 0.15);
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center contents */
+    justify-content: center; /* Center contents */
+}
+
+/* Testimonial Container Styles */
+.testimonial-container {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    
+    color: #fff; /* Ensure text is readable on black background */
+    text-align: center; /* Center text */
+}
+
+.testimonial-container img {
+    display: block;
+    margin: 1.8em auto;
+     /* Adjust the rounding as needed */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 60%; /* Adjust this value to ensure the image fits well */
+    object-fit:fill; /* Ensure the image covers the area */
+}
+
+
+/* Button Styles */
+.wrapper button {
+    font-size: 1.8em;
+    height: 2.2em;
+    width: 2.2em;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center button */
+    border: none;
+    color: #0a69ed;
+    box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button#next {
+    right: -1.1em;
+}
+
+button#prev {
+    left: -1.1em;
+}
+
+/* Welcome Text Styles */
+.welcome-text {
+    text-align: center;
+    margin: 2rem auto; /* Center the text */
+    color: #333; /* Change text color */
+    padding: 1rem; /* Add some padding */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Light background for contrast */
+    border-radius: 0.5em; /* Optional: Rounded corners */
+    position: relative; /* Ensure it stays in flow */
+    z-index: 1; /* Bring it above other content */
+}
+
+.welcome-text p{
+    size: 10px;
+}
+
+.book{
+    padding: 10px;
+    size: 1.5rem;
+    background-color: orangered;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 800px) {
+    .toggleBtn {
+        display: none; /* Hide toggle button on larger screens */
+    }
+
+    .links {
+        height: auto; /* Adjust height to auto */
+    }
+}
